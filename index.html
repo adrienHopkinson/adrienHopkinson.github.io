@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -11,15 +13,17 @@
             margin: 0;
             padding: 0;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            background-color: #f0f0f0;
+            min-height: 100vh;
+            background-color: #f4f4f4;
             color: #333;
         }
 
-        .container {
+        header {
             text-align: center;
+            margin-bottom: 20px;
         }
 
         h1 {
@@ -30,6 +34,11 @@
         p {
             font-size: 1.2rem;
             margin: 20px 0;
+        }
+
+        .container {
+            text-align: center;
+            margin-bottom: 40px;
         }
 
         a {
@@ -44,15 +53,37 @@
         a:hover {
             background-color: #0056b3;
         }
+
+        .pdf-section {
+            text-align: center;
+        }
+
+        .pdf-section a {
+            text-decoration: none;
+            color: #007BFF;
+            font-size: 18px;
+        }
+
+        .pdf-section a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 
 <body>
-    <div class="container">
+    <header>
         <h1>Adrien Hopkinson</h1>
-        <p>Welcome!</p>
-        <a href="portfolio.html">View My Portfolio</a>
+        <p>Welcome to my portfolio website!</p>
+    </header>
+
+    <div class="container">
+        <p>Below you can find a sample of my work.</p>
+        <a href="insomnia/workSample_00.pdf" target="_blank">Download Work Sample</a>
     </div>
+
+    <section class="pdf-section">
+        <embed src="insomnia/workSample_00.pdf" type="application/pdf" width="600" height="400">
+    </section>
 </body>
 
 </html>
