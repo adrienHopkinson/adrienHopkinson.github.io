@@ -33,6 +33,14 @@
             margin-bottom: 40px;
         }
 
+        .profile-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+            /* Adjust as needed for spacing between profile and bio */
+        }
+
         .container {
             background-color: rgba(0, 0, 0, 0.7);
             /* dark overlay */
@@ -85,16 +93,19 @@
         b {
             display: inline-block;
             text-decoration: none;
-            color: white;
-            background-color: blue;
-            padding: none;
+            color: none;
+            shape-rendering: auto;
+            background-color: #0077B5;
+            padding: 2.5px 2.5px;
+            border-radius: 100%;
             font-size: 1rem;
             margin-top: none;
         }
 
-        /* b:hover {
+        b:hover {
             background-color: #0056b3;
-        } */
+            border-radius: 50%;
+        }
 
         footer {
             margin-top: 30px;
