@@ -37,8 +37,20 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: center;
+            text-align: center;
             margin-bottom: 20px;
             /* Adjust as needed for spacing between profile and bio */
+        }
+
+        .profile-container img {
+            margin: 0 auto;
+            display: block;
+        }
+
+        .profile-container a {
+            margin: 10px auto;
+            display: inline-block;
         }
 
         .container {
@@ -90,6 +102,23 @@
             min-width: 250px;
         }
 
+        .linkedin-icon {
+            margin-top: 10px;
+            /* Space between the image and icon */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* Center the icon horizontally */
+        }
+
+        .linkedin-icon img {
+            width: 24px;
+            /* Adjust icon size */
+            height: 24px;
+            border-radius: 50%;
+            /* Optional for rounded icons */
+        }
+
         b {
             display: inline-block;
             text-decoration: none;
@@ -110,6 +139,33 @@
         footer {
             margin-top: 30px;
             font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .about-me {
+                flex-direction: column;
+                /* Stack elements vertically */
+                text-align: center;
+                /* Center-align content */
+            }
+
+            .about-me .bio {
+                text-align: center;
+                /* Center-align text inside bio */
+                margin-top: 20px;
+                /* Add spacing between sections */
+            }
+
+            .about-me img {
+                margin: 0 auto;
+                /* Center the profile picture on mobile */
+            }
+
+            .linkedin-icon {
+                margin-top: 10px;
+                /* Ensure spacing between icon and other elements */
+                justify-content: center;
+            }
         }
     </style>
 </head>
@@ -134,16 +190,17 @@
                 <p>Adrien Hopkinson is an analyst and product manager specializing in driving product growth and
                     development within conversational AI.
                 </p>
-                <p>A self-starter who works across teams, Adrien gets his hands dirty to ensure clean, meaningful
-                    work on the other end - even in challenging, high-paced environments.</p>
-                <a href="insomnia/workSample_00.pdf" target="_blank">Download Work Sample</a>
+                <p>A self-starter who works across teams in challenging, high-paced environements, Adrien gets his hands
+                    dirty to ensure clean, meaningful
+                    work on the other end.</p>
+                <a href="insomnia/workSample_01.pdf" target="_blank">Recent Work Sample</a>
                 <a href="insomnia/recognition.pdf" target="_blank">Recognition</a>
             </div>
         </section>
     </div>
 
     <footer>
-        <p>&copy; 2024 Adrien Hopkinson | PauseThink Solutions </p>
+        <p>&copy; 2024 Adrien Hopkinson | PauseThink Solutions LLC</p>
     </footer>
 </body>
 
